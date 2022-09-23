@@ -11,7 +11,6 @@ const HomePage = () => {
   return (
     <Container>
       <Header />
-      {/* <div>Home Page</div> */}
       <Hero />
       <UnderHero />
       <SectionThree />

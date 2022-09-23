@@ -22,7 +22,7 @@ const Container = styled.section`
     width: 100%;
     height: auto;
   }
-  
+
   .universal-card:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: 3;

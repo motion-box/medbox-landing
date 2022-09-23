@@ -27,7 +27,6 @@ const Container = styled.section`
   .hero-bubble {
     position: absolute;
     z-index: 6;
-    /* transition: 1s all ease-out; */
   }
 
   .hero-bubble_1 {
@@ -92,5 +91,4 @@ const Container = styled.section`
     transition: 1.5s all ease-out;
   }
 `;
-
 export default Container;

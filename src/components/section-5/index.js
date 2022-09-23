@@ -7,7 +7,7 @@ const SectionFive = ({ title, subtitle, data }) => {
       <div className="section-wrapper">
         <div className="section-title-box">
           <h2 className="main-titles">{title}</h2>
-          <p className="main-texts section-three-text">{subtitle}</p>
+          <p className="main-texts section-five-text">{subtitle}</p>
         </div>
         <div className="section-box">
           {data.map((item) => (

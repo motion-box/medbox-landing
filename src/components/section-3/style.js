@@ -26,5 +26,9 @@ const Container = styled.section`
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  .universal-card:nth-child(4) {
+      /* grid-template-columns: 0.57fr 0.43fr; */
+  }
 `;
 export default Container;

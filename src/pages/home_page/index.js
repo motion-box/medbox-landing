@@ -12,13 +12,13 @@ const HomePage = () => {
   const sectionThree = useMemo(
     () => ({
       title: "Быстро и надежно",
-      description: "Удобная система экономящая вам время и нервы",
+      subtitle: "Удобная система экономящая вам время и нервы",
       data: [
         {
           id: 0,
           horizontal: true,
           title: "Система безопасности личных данных",
-          image: "/clinic-hero-img.png",
+          image: "/QR-code-img.jpg",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 1"),
@@ -27,7 +27,7 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Быстрый поиск по частозаболевающимся болезням",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -37,7 +37,7 @@ const HomePage = () => {
         {
           id: 2,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Онлайн бронирование",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -47,8 +47,8 @@ const HomePage = () => {
         {
           id: 3,
           horizontal: true,
-          title: "Онлайн бронирование",
-          image: "/mobile-img.png",
+          title: "Следи за здоровьем семьи",
+          image: "/family-card-img.jpg",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 2"),
@@ -61,7 +61,7 @@ const HomePage = () => {
   const sectionFour = useMemo(
     () => ({
       title: "Информативно и достоверно",
-      description: "Полноценная информация о медучреждениях и о врачах",
+      subtitle: "Полноценная информация о медучреждениях и о врачах",
       data: [
         {
           id: 0,
@@ -89,8 +89,8 @@ const HomePage = () => {
         {
           id: 2,
           horizontal: true,
-          title: "Все медучреждения с рейтингом обслуживания",
-          image: "/mobile-img.png",
+          title: "Медучреждения с чесным рейтингом обслуживания",
+          image: "/world-rating.jpg",
           color: "white",
           background: "#000",
           button: {
@@ -105,7 +105,8 @@ const HomePage = () => {
   const sectionFive = useMemo(
     () => ({
       title: "Cashback система",
-      description: "Открыв карту лояльности вы получите приветственные 10 000 баллов",
+      subtitle:
+        "Открыв карту лояльности вы получите приветственные 10 000 баллов",
       data: [
         {
           id: 0,
@@ -120,7 +121,7 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Возможность увеличения cashback",
           image: "/mobile-img.png",
           background: "#FFF",
           button: {
@@ -155,10 +156,7 @@ const HomePage = () => {
       <SectionThree {...sectionThree} />
       <SectionFour {...sectionFour} />
       <SectionFive {...sectionFive} />
-      <Footer
-        title="MEDBOX"
-        subtitle="Для меня,  для тебя,  для всех!"
-      />
+      <Footer title="Цифровая медицина." subtitle="Доступно для iPhone и Android + Умные часы" />
     </Container>
   );
 };

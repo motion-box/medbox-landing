@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Container = styled.section`
   padding: 58px 0 57px 0;
   background-image: url("/union-icon.svg");
-  /* overflow-x: hidden; */
 
   .hero-part {
     position: relative;

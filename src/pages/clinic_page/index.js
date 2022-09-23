@@ -1,5 +1,5 @@
 import Header from "../../components/header";
-import Hero from "../../components/hero";
+import ClinicHero from "../../components/clinic-hero";
 import UnderHero from "../../components/underHero";
 import SectionThree from "../../components/section-3";
 import SectionFour from "../../components/section-4";
@@ -8,17 +8,17 @@ import Footer from "../../components/footer";
 import Container from "./style";
 import { useMemo } from "react";
 
-const HomePage = () => {
+const ClinicPage = () => {
   const sectionThree = useMemo(
     () => ({
-      title: "Быстро и надежно",
-      description: "Удобная система экономящая вам время и нервы",
+      title: "Административная панель",
+      description: "Административная панель дает возможность врачам удобно вести запись в анкеты посетивших их пациентов",
       data: [
         {
           id: 0,
           horizontal: true,
-          title: "Система безопасности личных данных",
-          image: "/clinic-hero-img.png",
+          title: "Множество возможностей с административной панелью",
+          image: "/mobile-img.png",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 1"),
@@ -27,7 +27,7 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Направлять на обследования",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -37,7 +37,7 @@ const HomePage = () => {
         {
           id: 2,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Результаты анализов",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -47,7 +47,7 @@ const HomePage = () => {
         {
           id: 3,
           horizontal: true,
-          title: "Онлайн бронирование",
+          title: "Долой непонятным почергам",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -60,8 +60,8 @@ const HomePage = () => {
   );
   const sectionFour = useMemo(
     () => ({
-      title: "Информативно и достоверно",
-      description: "Полноценная информация о медучреждениях и о врачах",
+      title: "Синтез речи",
+      description: "Ручки с листками теперь никчему",
       data: [
         {
           id: 0,
@@ -89,7 +89,7 @@ const HomePage = () => {
         {
           id: 2,
           horizontal: true,
-          title: "Все медучреждения с рейтингом обслуживания",
+          title: "Синтез речи запишет вместо вас",
           image: "/mobile-img.png",
           color: "white",
           background: "#000",
@@ -104,13 +104,13 @@ const HomePage = () => {
   );
   const sectionFive = useMemo(
     () => ({
-      title: "Cashback система",
-      description: "Открыв карту лояльности вы получите приветственные 10 000 баллов",
+      title: "Синхронизаця с мед оборудованиями",
+      description: "Обмен данными с диагностическими, лабораторными и рентгенографическими оборудованиями",
       data: [
         {
           id: 0,
           // vertical: true,
-          title: "Cashback до 15% при каждом обслуживании",
+          title: "Потерии данных на листках теперь в прошлом",
           image: "/mobile-img.png",
           button: {
             text: "Доступно",
@@ -120,7 +120,7 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Получение информации прямиком от оборудования ",
           image: "/mobile-img.png",
           background: "#FFF",
           button: {
@@ -131,7 +131,7 @@ const HomePage = () => {
         {
           id: 2,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
+          title: "Данные хранятся в единой базе",
           image: "/mobile-img.png",
           color: "#fff",
           background: "#007AFF",
@@ -147,20 +147,20 @@ const HomePage = () => {
   return (
     <Container>
       <Header />
-      <Hero />
+      <ClinicHero />
       <UnderHero
         title="Цифровая медицина."
-        subtitle="Все клиники и врачи в кармане."
+        subtitle="Удобное приложение для взаимодействия с пациентами"
       />
       <SectionThree {...sectionThree} />
       <SectionFour {...sectionFour} />
       <SectionFive {...sectionFive} />
       <Footer
-        title="MEDBOX"
-        subtitle="Для меня,  для тебя,  для всех!"
+        title="Цифровая медицина."
+        subtitle="Доступно для iPhone и Android + Умные часы"
       />
     </Container>
   );
 };
 
-export default HomePage;
+export default ClinicPage;

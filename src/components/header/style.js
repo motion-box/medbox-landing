@@ -32,6 +32,14 @@ const Container = styled.header`
     margin-right: 24px;
   }
 
+  .header__nav-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    color: rgba(60, 60, 67, 0.6);
+  }
+
   .header__nav-link--active {
     color: #000000;
   }

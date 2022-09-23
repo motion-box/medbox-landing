@@ -3,17 +3,15 @@ import Link from "next/link";
 import AppStore from "../../resources/app-store";
 import GooglePlay from "../../resources/google-play";
 
-const UnderHero = () => {
+const UnderHero = ({ title, subtitle }) => {
   return (
     <Container>
       <div className="section-wrapper">
         <div className="under-hero-part">
           <div className="under-hero-title-box">
             <h2 className="under-hero-title main-titles">
-              Цифровая медицина.
-              <span className="under-hero-title-mark">
-                Все клиники и врачи в кармане.
-              </span>
+              {title}
+              <span className="under-hero-title-mark">{subtitle}</span>
             </h2>
           </div>
           <div className="download-box">

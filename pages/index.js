@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
         <Head>
-            <title>MEDBOX | Client</title>
+            <title>MEDBOX | Клиентам</title>
         </Head>
         <HomePage/>
         </>

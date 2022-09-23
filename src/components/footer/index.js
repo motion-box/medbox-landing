@@ -3,16 +3,14 @@ import Link from "next/link";
 import AppStore from "../../resources/app-store";
 import GooglePlay from "../../resources/google-play";
 
-const Footer = () => {
+const Footer = ({ title, subtitle }) => {
   return (
     <Container>
       <div className="section-wrapper">
         <div className="footer-part">
           <div className="footer-title-box">
-            <h2 className="footer-title main-titles">MEDBOX</h2>
-            <p className="footer-text main-texts">
-              Для меня, для тебя, для всех!
-            </p>
+            <h2 className="footer-title main-titles">{title}</h2>
+            <p className="footer-text main-texts">{subtitle}</p>
           </div>
           <div className="download-text-box">
             <div className="download-box">

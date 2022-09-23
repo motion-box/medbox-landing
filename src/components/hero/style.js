@@ -21,6 +21,7 @@ const Container = styled.section`
     z-index: 10;
     width: 376px;
     height: 680px;
+    transition: 3s all ease-out;
   }
 
   .hero-bubble {
@@ -35,8 +36,8 @@ const Container = styled.section`
     background: linear-gradient(180deg, #85d3ff 0%, #32a9eb 100%);
     box-shadow: 0px 30px 40px rgba(121, 190, 227, 0.4);
     border-radius: 50.5781px;
-    transform: rotate(-16.97deg);
     transform-origin: 75% 25%;
+    transition: 1.5s all ease-out;
   }
 
   .hero-bubble_2 {
@@ -45,8 +46,8 @@ const Container = styled.section`
     background: linear-gradient(180deg, #ff7474 0%, #e92e2e 100%);
     box-shadow: 0px 23.8178px 60px rgba(234, 49, 49, 0.4);
     border-radius: 71.4536px;
-    transform: rotate(21.24deg);
     transform-origin: 75% 25%;
+    transition: 2s all ease-out;
   }
 
   .hero-bubble_3 {
@@ -56,8 +57,8 @@ const Container = styled.section`
     background: linear-gradient(180deg, #f7d354 0%, #dda209 100%);
     box-shadow: 0px 14.9884px 37.7577px rgba(248, 203, 47, 0.4);
     border-radius: 44.9653px;
-    transform: rotate(-14.11deg);
     transform-origin: 75% 25%;
+    transition: 2s all ease-out;
   }
 
   .hero-bubble_4 {
@@ -67,8 +68,8 @@ const Container = styled.section`
     background: linear-gradient(180deg, #7785ff 0%, #2f43f8 100%);
     box-shadow: 0px 20.248px 51.007px rgba(47, 67, 248, 0.4);
     border-radius: 60.7439px;
-    transform: rotate(15deg);
     transform-origin: 75% 25%;
+    transition: 1.5s all ease-out;
   }
 
   .hero-bubble_5 {
@@ -77,17 +78,18 @@ const Container = styled.section`
     background: linear-gradient(180deg, #54fd83 0%, #27cc55 100%);
     box-shadow: 0px 11.7015px 29.4774px rgba(39, 204, 85, 0.4);
     border-radius: 35.1044px;
-    transform: rotate(-15deg);
     transform-origin: 75% 25%;
+    transition: 1.5s all ease-out;
   }
+
   .hero-bubble_6 {
     top: 351px;
     left: 106px;
     background: linear-gradient(180deg, #fd54ec 0%, #b527cc 100%);
     border-radius: 35.1044px;
-    transform: rotate(-15deg);
     transform-origin: 75% 25%;
     box-shadow: 0px 11.7015px 29.4774px rgba(253, 84, 236, 0.4);
+    transition: 1.5s all ease-out;
   }
 `;
 

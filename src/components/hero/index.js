@@ -15,27 +15,31 @@ const Hero = () => {
   const { scrollY } = useScroll();
   const bubble1X = useTransform(scrollY, [0, 400], [0, -500]);
   const bubble1Y = useTransform(scrollY, [0, 400], [0, -400]);
-  const bubble1Rotate = useTransform(scrollY, [0, 400], [0, 100]);
+  const bubble1Rotate = useTransform(scrollY, [0, 400], [-16.97, 100]);
 
-  const bubble2X = useTransform(scrollY, [0, 450], [0, -700]);
-  const bubble2Y = useTransform(scrollY, [0, 650], [0, -100]);
-  const bubble2Rotate = useTransform(scrollY, [0, 250], [0, 45]);
+  const bubble2X = useTransform(scrollY, [0, 450], [30, -700]);
+  const bubble2Y = useTransform(scrollY, [0, 650], [50, -100]);
+  const bubble2Rotate = useTransform(scrollY, [0, 250], [21.24, 45]);
 
   const bubble3X = useTransform(scrollY, [0, 400], [0, 700]);
   const bubble3Y = useTransform(scrollY, [0, 400], [0, -100]);
-  const bubble3Rotate = useTransform(scrollY, [0, 400], [0, 100]);
+  const bubble3Rotate = useTransform(scrollY, [0, 400], [-14.11, 100]);
 
   const bubble4X = useTransform(scrollY, [0, 400], [0, 500]);
   const bubble4Y = useTransform(scrollY, [0, 400], [0, -400]);
-  const bubble4Rotate = useTransform(scrollY, [0, 400], [0, 100]);
+  const bubble4Rotate = useTransform(scrollY, [0, 400], [15, 100]);
 
-  const bubble5X = useTransform(scrollY, [0, 400], [0, 700]);
-  const bubble5Y = useTransform(scrollY, [0, 400], [0, 300]);
-  const bubble5Rotate = useTransform(scrollY, [0, 400], [0, 100]);
+  const bubble5X = useTransform(scrollY, [0, 400], [-10, 700]);
+  const bubble5Y = useTransform(scrollY, [0, 400], [-30, 300]);
+  const bubble5Rotate = useTransform(scrollY, [0, 400], [-15, 100]);
 
   const bubble6X = useTransform(scrollY, [0, 400], [0, -700]);
   const bubble6Y = useTransform(scrollY, [0, 600], [0, 350]);
-  const bubble6Rotate = useTransform(scrollY, [0, 400], [0, 100]);
+  const bubble6Rotate = useTransform(scrollY, [0, 400], [-15, 100]);
+
+  const heroMobileX = useTransform(scrollY, [0, 0], [0, 0]);
+  const heroMobileY = useTransform(scrollY, [0, 210], [0, 50]);
+  const heroMobileRotate = useTransform(scrollY, [0, 0], [0, 0]);
 
   //   const test = useTransform(scrollY, [440, 760, 900], [0, 4, 100]);
 
@@ -47,7 +51,14 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <motion.div className="hero-img-box">
+        <motion.div
+          className="hero-img-box"
+          style={{
+            x: heroMobileX,
+            y: heroMobileY,
+            rotate: heroMobileRotate,
+          }}
+        >
           <Image
             src="/mobile-img.png"
             layout="fill"

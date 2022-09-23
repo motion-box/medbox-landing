@@ -9,6 +9,11 @@ const Container = styled.div`
   padding: 48px;
   background-color: ${(props) => props.background || "#ffffff"};
   border-radius: 32px;
+  grid-template-areas:
+    "button"
+    "title";
+  grid-template-rows: auto 1fr;
+  align-items: center;
 
   button {
     grid-area: button;
@@ -26,11 +31,11 @@ const Container = styled.div`
 
   h3 {
     grid-area: title;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
     margin: 0;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 41px;
-    letter-spacing: 0.374px;
+    text-align: center;
     color: ${(props) => props.color || "#000"};
   }
 
@@ -70,6 +75,7 @@ const Container = styled.div`
         font-weight: 600;
         font-size: 64px;
         line-height: 70px;
+        text-align: inherit;
       }
     `}
 
@@ -92,7 +98,10 @@ const Container = styled.div`
         !props.reverse ? "auto auto 1fr" : "auto 1fr auto"};
 
       h3 {
+        font-weight: 400;
         font-size: 34px;
+        line-height: 41px;
+        text-align: inherit;
       }
       .image-cont {
         height: ${(props) => (!props.reverse ? "calc(100% + 48px)" : "100%")};

@@ -7,7 +7,7 @@ const Container = styled.section`
     max-width: 691px;
     margin-bottom: 64px;
 
-    .section-three-text {
+    .section-five-text {
       margin-top: 32px;
       color: rgba(60, 60, 67, 0.6);
     }
@@ -16,13 +16,12 @@ const Container = styled.section`
   .section-box {
     display: grid;
     gap: 32px;
-    grid-template-rows: repeat(3, 480px);
+    grid-template-rows: repeat(2, 480px);
     grid-template-columns: 0.58fr 0.42fr;
     width: 100%;
     height: auto;
   }
-  .universal-card:nth-child(1),
-  .universal-card:nth-child(4) {
+  .universal-card:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 3;
   }

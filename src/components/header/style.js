@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const Container = styled.header`
     display: grid;
-    height: 96px;
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
+    height: 96px;
     padding: 0 32px;
-
+    z-index: 10;
     .header_logo {
         height: 48px;
     }

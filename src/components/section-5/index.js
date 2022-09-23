@@ -2,27 +2,27 @@ import Container from "./style";
 import Link from "next/link";
 import Card from "../card";
 
-const SectionThree = () => {
+const SectionFive = () => {
   return (
     <Container>
       <div className="section-wrapper">
         <div className="section-title-box">
-          <h2 className="main-titles">Быстро и надежно</h2>
-          <p className="main-texts section-three-text">
-            Удобная система экономящая вам время и нервы
+          <h2 className="main-titles">Cashback система</h2>
+          <p className="main-texts section-five-text">
+            Открыв карту лояльности вы получите приветственные 10 000 баллов
           </p>
         </div>
         <div className="section-box">
           <Card
-            horizontal
+            // horizontal
             // vertical
             // reverse
             button={{
               text: "Доступно",
               onClick: () => console.log("SEE MORE"),
             }}
-            title="Система безопасности личных данных"
-            image={"/mobile-img.png"}
+            title="Cashback до 15% при каждом обслуживании"
+            // image={"/mobile-img.png"}
           />
           <Card
             // horizontal
@@ -45,18 +45,9 @@ const SectionThree = () => {
               onClick: () => console.log("SEE MORE"),
             }}
             title="Доступно для iPhone и Android + Умные часы"
+            color="#fff"
             image={"/mobile-img.png"}
-          />
-          <Card
-            horizontal
-            // vertical
-            // reverse
-            button={{
-              text: "Доступно",
-              onClick: () => console.log("SEE MORE"),
-            }}
-            title="Онлайн бронирование"
-            image={"/mobile-img.png"}
+            background="#007AFF"
           />
         </div>
         {/* <Card vertical /> */}
@@ -64,4 +55,4 @@ const SectionThree = () => {
     </Container>
   );
 };
-export default SectionThree;
+export default SectionFive;

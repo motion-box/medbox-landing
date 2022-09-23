@@ -1,7 +1,10 @@
 import Header from "../../components/header";
 import Hero from "../../components/hero";
-import SectionThree from "../../components/section-3";
 import UnderHero from "../../components/underHero";
+import SectionThree from "../../components/section-3";
+import SectionFour from "../../components/section-4";
+import SectionFive from "../../components/section-5";
+import Footer from "../../components/footer";
 import Container from "./style";
 
 const HomePage = () => {
@@ -12,6 +15,9 @@ const HomePage = () => {
       <Hero />
       <UnderHero />
       <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <Footer />
     </Container>
   );
 };

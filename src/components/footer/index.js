@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="section-wrapper">
         <div className="footer-part">
           <div className="footer-title-box">
-            <h2 className="footer-title main-titles">Цифровая медицина.</h2>
+            <h2 className="footer-title main-titles">MEDBOX</h2>
             <p className="footer-text main-texts">
-              Доступно для iPhone и Android + Умные часы
+              Для меня, для тебя, для всех!
             </p>
           </div>
           <div className="download-text-box">

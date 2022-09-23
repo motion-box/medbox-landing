@@ -35,6 +35,7 @@ const SectionFour = () => {
             }}
             title="Доступно для iPhone и Android + Умные часы"
             image={"/mobile-img.png"}
+            background="#F2F2F7"
           />
           <Card
             horizontal

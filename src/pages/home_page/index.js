@@ -27,8 +27,9 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Быстрый поиск по частозаболевающимся болезням",
-          image: "/mobile-img.png",
+          title: "Быстрый поиск без сложных медицинских терминов",
+          image: "/fast-search.png",
+          background: "#E6E6EC",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 2"),
@@ -38,7 +39,7 @@ const HomePage = () => {
           id: 2,
           vertical: true,
           title: "Онлайн бронирование",
-          image: "/mobile-img.png",
+          image: "/online-bron.jpg",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 3"),
@@ -66,8 +67,8 @@ const HomePage = () => {
         {
           id: 0,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
-          image: "/mobile-img.png",
+          title: "Вся информация о клиниках и врачах",
+          image: "/more-info.png",
           background: "#E6E6EC",
           button: {
             text: "Доступно",
@@ -78,8 +79,8 @@ const HomePage = () => {
           id: 1,
           vertical: true,
           reverse: true,
-          title: "Доступно для iPhone и Android + Умные часы",
-          image: "/mobile-img.png",
+          title: "Живая оценка клиники от пациентов",
+          image: "/people-comment.png",
           background: "#F2F2F7",
           button: {
             text: "Доступно",
@@ -90,7 +91,7 @@ const HomePage = () => {
           id: 2,
           horizontal: true,
           title: "Медучреждения с чесным рейтингом обслуживания",
-          image: "/world-rating.jpg",
+          image: "/world-rating.png",
           color: "white",
           background: "#000",
           button: {
@@ -105,8 +106,7 @@ const HomePage = () => {
   const sectionFive = useMemo(
     () => ({
       title: "Cashback система",
-      subtitle:
-        "Открыв карту лояльности вы получите приветственные 10 000 баллов",
+      subtitle: "Привлекательные предложения для вас и вашего кармана",
       data: [
         {
           id: 0,
@@ -121,8 +121,9 @@ const HomePage = () => {
         {
           id: 1,
           vertical: true,
-          title: "Возможность увеличения cashback",
-          image: "/mobile-img.png",
+          title:
+            "Открыв карту лояльности вы получите приветственные  10 000 баллов",
+          image: "/bonus-ball.png",
           background: "#FFF",
           button: {
             text: "Доступно",
@@ -132,8 +133,8 @@ const HomePage = () => {
         {
           id: 2,
           vertical: true,
-          title: "Доступно для iPhone и Android + Умные часы",
-          image: "/mobile-img.png",
+          title: "Возможность увеличения cashback",
+          image: "/cashback-crown.svg",
           color: "#fff",
           background: "#007AFF",
           button: {
@@ -156,7 +157,10 @@ const HomePage = () => {
       <SectionThree {...sectionThree} />
       <SectionFour {...sectionFour} />
       <SectionFive {...sectionFive} />
-      <Footer title="Цифровая медицина." subtitle="Доступно для iPhone и Android + Умные часы" />
+      <Footer
+        title="Цифровая медицина."
+        subtitle="Доступно для iPhone и Android + Умные часы"
+      />
     </Container>
   );
 };

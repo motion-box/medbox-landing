@@ -25,5 +25,9 @@ const Container = styled.section`
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  .universal-card:nth-child(3) .imgage-cont {
+    width: 134px;
+  }
 `;
 export default Container;

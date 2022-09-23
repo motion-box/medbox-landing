@@ -28,7 +28,7 @@ const Container = styled.section`
   }
 
   .universal-card:nth-child(4) {
-      /* grid-template-columns: 0.57fr 0.43fr; */
+      grid-template-columns: 0.57fr 0.43fr;
   }
 `;
 export default Container;

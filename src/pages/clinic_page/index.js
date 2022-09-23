@@ -19,7 +19,7 @@ const ClinicPage = () => {
           id: 0,
           horizontal: true,
           title: "Множество возможностей с административной панелью",
-          image: "/mobile-img.png",
+          image: "/admin-dashboard-card.png",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 1"),
@@ -29,7 +29,7 @@ const ClinicPage = () => {
           id: 1,
           vertical: true,
           title: "Направлять на обследования",
-          image: "/mobile-img.png",
+          image: "/direction-list-img.png",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 2"),
@@ -49,7 +49,7 @@ const ClinicPage = () => {
           id: 3,
           horizontal: true,
           title: "Долой непонятным почергам",
-          image: "/mobile-img.png",
+          image: "/stress-img-card.png",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 2"),
@@ -68,7 +68,7 @@ const ClinicPage = () => {
           id: 0,
           vertical: true,
           title: "Доступно для iPhone и Android + Умные часы",
-          image: "/mobile-img.png",
+          image: "/med-termins.jpg",
           background: "#E6E6EC",
           button: {
             text: "Доступно",
@@ -80,7 +80,7 @@ const ClinicPage = () => {
           vertical: true,
           reverse: true,
           title: "Доступно для iPhone и Android + Умные часы",
-          image: "/mobile-img.png",
+          image: "/available-phone.png",
           background: "#F2F2F7",
           button: {
             text: "Доступно",
@@ -91,7 +91,7 @@ const ClinicPage = () => {
           id: 2,
           horizontal: true,
           title: "Синтез речи запишет вместо вас",
-          image: "/mobile-img.png",
+          image: "/voice-recorder.png",
           color: "white",
           background: "#000",
           button: {
@@ -111,9 +111,10 @@ const ClinicPage = () => {
       data: [
         {
           id: 0,
-          // vertical: true,
+          vertical: true,
+          reverse: true,
           title: "Потерии данных на листках теперь в прошлом",
-          image: "/mobile-img.png",
+          image: "/refresh-card-img.svg",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 1"),
@@ -123,7 +124,7 @@ const ClinicPage = () => {
           id: 1,
           vertical: true,
           title: "Получение информации прямиком от оборудования ",
-          image: "/mobile-img.png",
+          image: "/getting-info-machine.png",
           background: "#FFF",
           button: {
             text: "Доступно",
@@ -134,7 +135,7 @@ const ClinicPage = () => {
           id: 2,
           vertical: true,
           title: "Данные хранятся в единой базе",
-          image: "/mobile-img.png",
+          image: "/database-icon.svg",
           color: "#fff",
           background: "#007AFF",
           button: {

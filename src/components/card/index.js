@@ -38,7 +38,13 @@ const Card = (props) => {
       {horizontal && <div className="trashhold" />}
       {image && (
         <div className="image-cont">
-          <Image src={image} alt={image} layout="fill"  objectFit="contain" />
+          <Image
+            priority={true}
+            src={image}
+            alt={image}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       )}
     </Container>

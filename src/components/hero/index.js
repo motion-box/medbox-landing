@@ -60,6 +60,7 @@ const Hero = () => {
           }}
         >
           <Image
+            priority={true}
             src="/mobile-img.png"
             layout="fill"
             objectFit="cover"

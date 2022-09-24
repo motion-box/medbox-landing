@@ -60,6 +60,7 @@ const ClinicHero = () => {
           }}
         >
           <Image
+            priority={true}
             src="/clinic-hero-img.png"
             layout="fill"
             objectFit="cover"

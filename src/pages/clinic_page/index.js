@@ -79,8 +79,8 @@ const ClinicPage = () => {
           id: 1,
           vertical: true,
           reverse: true,
-          title: "Доступно для iPhone и Android + Умные часы",
-          image: "/available-phone.png",
+          title: "Бонусы за выполненные задания",
+          image: "/task-bonus.png",
           background: "#F2F2F7",
           button: {
             text: "Доступно",

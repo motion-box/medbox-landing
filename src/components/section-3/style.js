@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Container = styled.section`
   padding: 128px 0;
@@ -28,7 +28,28 @@ const Container = styled.section`
   }
 
   .universal-card:nth-child(4) {
-      grid-template-columns: 0.57fr 0.43fr;
+    grid-template-columns: 0.57fr 0.43fr;
   }
+
+  ${(props) =>
+    props.clinic &&
+    css`
+      .universal-card:nth-child(1) {
+        grid-template-columns: 0.4fr 06fr;
+
+        .image-cont {
+          margin-top: -48px;
+          width: calc(100% + 48px);
+          height: calc(100% + 48px);
+        }
+      }
+      .universal-card:nth-child(2) {
+        .image-cont {
+          margin-left: -48px;
+          width: calc(100% + 96px);
+          height: calc(100% + 48px);
+        }
+      }
+    `}
 `;
 export default Container;

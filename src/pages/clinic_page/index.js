@@ -39,7 +39,7 @@ const ClinicPage = () => {
           id: 2,
           vertical: true,
           title: "Результаты анализов",
-          image: "/mobile-img.png",
+          image: "/analyzes-result.png",
           button: {
             text: "Доступно",
             onClick: () => console.log("card 3"),
@@ -155,9 +155,9 @@ const ClinicPage = () => {
         title="Цифровая медицина."
         subtitle="Удобное приложение для взаимодействия с пациентами"
       />
-      <SectionThree {...sectionThree} />
-      <SectionFour {...sectionFour} />
-      <SectionFive {...sectionFive} />
+      <SectionThree {...sectionThree} clinic />
+      <SectionFour {...sectionFour} clinic />
+      <SectionFive {...sectionFive} clinic />
       <Footer
         title="Цифровая медицина."
         subtitle="Доступно для iPhone и Android + Умные часы"

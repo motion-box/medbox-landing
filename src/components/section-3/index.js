@@ -1,9 +1,9 @@
 import Container from "./style";
 import Card from "../card";
 
-const SectionThree = ({ title, subtitle, data }) => {
+const SectionThree = ({ title, subtitle, data, clinic }) => {
   return (
-    <Container>
+    <Container clinic={clinic}>
       <div className="section-wrapper">
         <div className="section-title-box">
           <h2 className="main-titles">{title}</h2>
